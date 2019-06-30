@@ -29,7 +29,7 @@
     top: 95px;
     z-index: 2000;
     right: -1000px;
-    transition: all 0.4s;
+    transition: all 0.5s;
 }
 
 
@@ -58,4 +58,37 @@
 .mostrar-flotante
 {
   right: 0;  
+}
+
+
+@media(min-width:1024px)
+{
+    .flotante
+    {
+      top: 100px;
+    }    
+    .flotante a
+    {
+      font-size: 17px;
+    }
+    .flotantet
+    {
+        top: 145px;
+    }
+    .input-buscar
+    {
+        padding: 6px;
+    }
+    .form-estilo
+    {
+        padding: 5px;
+        margin-bottom: 4px;
+        width: 99%;
+    }
+    .btn-buscar
+    {
+        font-size: 14px;
+    }
+    
+
 }

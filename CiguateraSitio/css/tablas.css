@@ -1,10 +1,10 @@
 #tablas {
      overflow:scroll;
-     height:75%;
-     width:35%;
+    height:61%;
+     width:25%;
 }
 #tablas table {
-    width:240px;
+    width:99%;
     background-color:#FBA319;
     border-radius: 20px;
     border-color: aquamarine;
