@@ -44,9 +44,17 @@
             <nav class="nav" id="nav">
                 <ul class="menu">
                     <li class="menu_item"><a class="menu_link select" href="">Inicio</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Categor&iacute;as</a></li>
+                    <li class="menu_item"><a class="menu_link" href="">Categor&iacute;as</a>
+                      <ul class="">
+                        <li class=""><a href="" class="">Articulos</a></li>
+                        <li class=""><a href="" class="">Zonas</a></li>
+                        <li class=""><a href="" class="">Peces</a></li>
+                    </ul>
+                    
+                    </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="">Contacto</a></li>
+                    <li class="menu_item"><span class="icon-wrench"></span></li>
                 </ul>
             </nav>
         </div>
