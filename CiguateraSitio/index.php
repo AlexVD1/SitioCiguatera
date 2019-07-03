@@ -54,7 +54,7 @@
                     </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="">Contacto</a></li>
-                    <li class="menu_item"><span class="icon-wrench"></span></li>
+                    <li class="menu_item"><span class="menu_link icon-wrench"></span></li>
                 </ul>
             </nav>
         </div>

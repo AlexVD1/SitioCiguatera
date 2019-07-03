@@ -33,13 +33,13 @@
                     </li>
                     <li class="menu_item"><a class="menu_link" href="">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="">Contacto</a></li>
-                    <li class="menu_item"><a href="" class="menu_link">Configurar</a></li>
+                    <li class="menu_item"><span class="menu_link icon-wrench"></span></li>
                 </ul>
             </nav>
         </div>
     </header>  
     
-   <div class="flotante">
+   <div class="flotante" id="btnflotante">
        <a class="btn-flotanteh" href="#">Descargar Art&iacute;culo PDF</a>
    </div> 
 
@@ -52,8 +52,8 @@
    </div>
    <div class="etiquetas">
        <?php
-       for($i=1;$i<=10;i++)
-       echo '<a href="" class="etiqueta">etiqueta'.$i.'</a>';     
+       for($i=1;$i<=10;$i++)
+       echo '<a href="" class="etiqueta">etiqueta '.$i.'</a>';     
        ?>
    </div>
     <h2 class="centrado">Lorem ipsum dolor.</h2>
