@@ -38,15 +38,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
+.icon-bars:before {
   content: "\61";
 }
-.icon-twitter:before {
+.icon-wrench:before {
   content: "\62";
 }
-.icon-gmail:before {
+.icon-twitter:before {
   content: "\63";
 }
-.icon-menu:before {
+.icon-facebook:before {
   content: "\64";
+}
+.icon-instagrem:before {
+  content: "\65";
+}
+.icon-mail:before {
+  content: "\66";
 }

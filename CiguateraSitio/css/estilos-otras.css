@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6
 /*---------------------------------ESTILOS DE HEADER---------------------------------*/
 .header
 {
-    height: 75px;
+    height: 65px;
     background: #FBA919;
 }
 
@@ -38,12 +38,13 @@ h1,h2,h3,h4,h5,h6
     
 }
 
-.icon-menu
+.icon-bars
 {
     display: block;
     width: 38px;
     height: 38px;
     font-size: 40px;
+    padding-right: 50px;
     background: #FBA919;
     color: #fff;
     text-align: center;
@@ -53,7 +54,7 @@ h1,h2,h3,h4,h5,h6
     
 }
 
-.logo, .icon-menu
+.logo, .icon-bars
 {
     margin: 7px;
     color: white;
@@ -198,14 +199,56 @@ h1,h2,h3,h4,h5,h6
     color: #333;
     text-decoration: none;
     font-size: 30px;
-    padding: 10px;
+    padding-top: 9px;
+    padding-right: 2px;
     background: white;
    border-radius: 50%;
     width: 50px;
+    
     height: 50px;
     line-height: 40px;
     margin: 0 3%;
     
+    
+}
+.imagencentro
+{
+    top: -10px;
+    width: 40%;
+    height: 350px;
+    display: inline-block;
+    position:relative;
+    left: 30%;
+    padding: 20px; 
+}
+
+.imgajust
+{
+    width: 100%;
+    height: 100%;
+}
+
+.justificado, .etiquetas
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    text-align: justify;
+}
+.centrado
+{
+     padding-left: 20%;
+    padding-right: 20%;
+    text-align: center;
+}
+
+.etiqueta
+{
+    padding: 2px;
+    text-decoration: none;
+    font-size: 12px;
+    color:black;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.2);
     
 }
 
@@ -277,6 +320,63 @@ h1,h2,h3,h4,h5,h6
         font-size: 30px;
     }
     
+    /*-------------------------------------Submenu----------------------------*/
+    .nav
+    {
+        border: 3px;
+        border-color: black;
+    }
+    .nav > ul > li:hover > ul 
+    {
+        display:block;
+        height:auto;
+    }
+    .nav > ul > li > ul
+    {
+        display:contents;
+        position:relative;
+        left:0;
+        right:0;
+        overflow:hidden;
+        height:0%;
+        text-align: center;
+    }
+    .nav > ul > li > ul >li
+    {
+        background: #FBA919;
+    }
+    .nav > ul > li > ul > li 
+    {
+        display:none;
+    }
+    .nav > ul > li:hover > ul > li 
+    {
+        list-style: none;
+        display:block;
+        position:static;
+        text-align: center;
+        padding: 15px;
+    }
+    .nav > ul > li > ul > li > a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        padding: 10px;
+        height: auto;
+    }
+     .nav > ul > li > ul > li:hover 
+    {
+        background: white;
+        color: #FBA919;
+    }
+     .nav > ul > li > ul > li:hover a
+    {
+        color: #FBA919;
+    }
+    
+    /*------------------------------------------------------------------------*/
+    
 }
 
 
@@ -315,6 +415,8 @@ h1,h2,h3,h4,h5,h6
         font-size: 20px;
     }
     
+    
+    
 }
 
 @media(min-width:1024px)
@@ -322,7 +424,7 @@ h1,h2,h3,h4,h5,h6
     .logo
     {
         font-size: 60px;
-        margin: 15px 20px;
+        margin:5px 9px;
     }
     .banner_titulo
     {
@@ -367,8 +469,56 @@ h1,h2,h3,h4,h5,h6
         position: static;
         width: auto;
     }
+    /*-------------------------------------Submenu----------------------------*/
+    nav > ul > li:hover > ul 
+    {
+        display:block;
+        height:auto;
+    }
+    .nav > ul > li > ul
+    {
+        display:block;
+        position:fixed;
+        left:-100px;
+        right:0;
+        overflow:hidden;
+        height:0%;
+        text-align: center;
+    }
+    .nav > ul > li > ul >li
+    {
+        background: #FBA919;
+    }
+    .nav > ul > li > ul > li 
+    {
+        list-style: none;
+        text-align: center;
+        padding: 15px;
+    }
+    .nav > ul > li > ul > li > a
+    {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 10px;
+        height: auto;
+    }
+     .nav > ul > li > ul > li:hover 
+    {
+        background: white;
+        color: #FBA919;
+    }
+     .nav > ul > li > ul > li:hover a
+    {
+        color: #FBA919;
+    }
+    
+    /*------------------------------------------------------------------------*/
+    
+    
     .menu
     {
+        padding: inherit;
         display: flex;
     }
     .menu_link
@@ -376,9 +526,10 @@ h1,h2,h3,h4,h5,h6
         background: 0;
         font-size: 30px;
         color: white;
-        padding-top: 0;
+        height: 65px;
+        padding-top: 10px;
     }
-    .icon-menu
+    .icon-bars
     {
         display: none;
     }

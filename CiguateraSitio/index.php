@@ -40,7 +40,7 @@
     <header class="header">
         <div class="contenedor imp">
             <h1 class="logo">Ciguatera</h1>
-            <span class="icon-menu" id="btn-menu"></span>
+            <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
                     <li class="menu_item"><a class="menu_link select" href="">Inicio</a></li>
@@ -135,7 +135,7 @@
     <footer class="footer">
         <div class="social">
             <a href="" class="icon-facebook"></a>
-            <a href="" class="icon-gmail"></a>
+            <a href="" class="icon-mail"></a>
             <a href="" class="icon-twitter"></a>
         </div>
         <p class="copy">&copy; Ciguatera-2019</p>
