@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ciguatera</title>
+    <title>InfoCigua</title>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="icon/styles.css">
@@ -39,21 +39,21 @@
    
     <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">Ciguatera</h1>
+            <h1 class="logo">InfoCigua</h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
                     <li class="menu_item"><a class="menu_link select" href="">Inicio</a></li>
                     <li class="menu_item"><a class="menu_link" href="">Categor&iacute;as</a>
                       <ul class="">
-                        <li class=""><a href="" class="">Articulos</a></li>
-                        <li class=""><a href="" class="">Zonas</a></li>
-                        <li class=""><a href="" class="">Peces</a></li>
+                        <li class=""><a href="articulos.php" class="">Articulos</a></li>
+                        <li class=""><a href="zonas.php" class="">Zonas</a></li>
+                        <li class=""><a href="peces.php" class="">Peces</a></li>
                     </ul>
                     
                     </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
-                    <li class="menu_item"><a class="menu_link" href="">Contacto</a></li>
+                    <li class="menu_item"><a class="menu_link" href="contacto.php">Contacto</a></li>
                     <li class="menu_item"><span class="menu_link icon-wrench"></span></li>
                 </ul>
             </nav>

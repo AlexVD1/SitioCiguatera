@@ -1,13 +1,35 @@
 #tablas {
      overflow:scroll;
-    height:61%;
-     width:25%;
+     height:61%;
+     width:55%;
 }
 #tablas table {
     width:99%;
     background-color:#FBA319;
     border-radius: 20px;
     border-color: aquamarine;
+}
+
+#tablas2 {
+    overflow: scroll;
+     height:100%;
+     width:100%;
+}
+#tablas2 table     {
+    width:auto;
+    background-color:#FBA319;
+    border-radius: 20px;
+    border-color: aquamarine;
+}
+
+td
+{
+    text-align: center;
+}
+
+th
+{
+padding-right: 14px;
 }
 
 .titulo_articulo
