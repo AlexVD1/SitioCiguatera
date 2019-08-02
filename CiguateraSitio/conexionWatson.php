@@ -88,7 +88,7 @@ class Conexion_Watson {
 
                     curl_setopt($curl, CURLOPT_USERPWD, $this->Usuario.":".$this->Contraseña);
 
-                    curl_setopt($curl, CURLOPT_URL, "https://gateway.watsonplatform.net/assistant/api/v2/assistants/c2428482-7370-4323-b13d-e6ffe03a7d85/sessions");
+                    curl_setopt($curl, CURLOPT_URL, "https://gateway.watsonplatform.net/assistant/api/v2/assistants/c2428482-7370-4323-b13d-e6ffe03a7d85/messages?version=2019-08-01");
 
                     curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
 
