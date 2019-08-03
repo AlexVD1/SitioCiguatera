@@ -10,12 +10,60 @@
     <link rel="stylesheet" href="css/estiloslide.css">
     <link rel="stylesheet" href="css/tablas.css">
     <link rel="stylesheet" href="css/estilos-otras.css">
+        <link rel="stylesheet" href="css/login.css">
+                <link rel="stylesheet" href="css/modificar.css">
     
 </head>
 <body>
+   <div id="miModal" class="modal">
+		<div class="flex" id="flex">
+			<div class="contenido-modal">
+				<div class="modal-header flex">
+					<h2>Iniciar Sesión</h2>
+					<span class="close" id="close">&times;</span>
+				</div>
+				<div class="modal-body">
+					<label for="Hola">Usuario</label>
+					<input class="input-buscar" id="usuario" type="text">		
+					<label for="Hola">Contraseña</label>
+					<input class="input-buscar" id="contraseña"type="password">	
+					<button class="btn-modal" id="btn-login" type="submit">Iniciar Sesión</button>	
+				</div>
+				<div class="footer">
+					<h3>&copy;InfoCigua - 2019</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+   <div id="ModalMod" class="modal">
+		<div class="flex" id="flexm">
+			<div class="contenido-modal">
+				<div class="modal-header flex">
+					<h2>Modificar Principal</h2>
+					<span class="close" id="closem">&times;</span>
+				</div>
+				
+				<div class="modal-body">
+				<label for="">Logo: </label>	
+				<input class="input-buscar" type="text" id="logo">
+				<label for="">Titulo: </label>	
+				<input class="input-buscar" type="text" id="titulo">
+				<label for="">Lema: </label>	
+				<input class="input-buscar" type="text" id="lema">
+				<label for="">Imagen: </label>	
+				<input class="input-buscar" type="text" id="imagen">			
+				</div>
+				
+				
+				<div class="footer">
+					<h3>&copy;InfoCigua - 2019</h3>
+				</div>
+			</div>
+		</div>
+	</div> 
     <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">InfoCigua</h1>
+            <h1 class="logo">InfoCigua<span id="mod-nom" class="nom icon-wrench"></span></h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
@@ -63,8 +111,9 @@
         </div>
         <p class="copy">&copy; InfoCigua-2019</p>
     </footer>
-    
-    
+            <script src="js/modificar.js"></script>
+
+            <script src="js/login.js"></script>/
     <script src="js/btn-flotante.js"></script>
     <script src="js/menu.js"></script>
 </body>

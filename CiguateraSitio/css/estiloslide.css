@@ -91,12 +91,12 @@
     transition: all 300ms;
 }
 
-@media(max-width:550px)
+@media(max-width:350px)
 {
     .slider
     {
-        width: 75%;
-        height: 300px;
+        width: 200px;
+        height: 150px;
     }
     
     .content-details{
@@ -134,7 +134,7 @@
 {
     .slider
     {
-        width: 75%;
+        width: 350px;
         height: 250px;
     }
         .content-details{

@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -11,12 +15,14 @@
     <link rel="stylesheet" href="css/estiloslide.css">
     <link rel="stylesheet" href="css/tablas.css">
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/btnmod.css">
 
 </head>
 <body>
    <div class="flotante">
        <a class="btn-flotanteh" id="btn-flotante">Buscar Art&iacute;culos</a>
    </div>
+   
    <div id="miModal" class="modal">
 		<div class="flex" id="flex">
 			<div class="contenido-modal">
@@ -25,11 +31,17 @@
 					<span class="close" id="close">&times;</span>
 				</div>
 				<div class="modal-body">
-					<label for="Hola">Usuario</label>
-					<input class="input-buscar" id="usuario" type="text">		
-					<label for="Hola">Contraseña</label>
-					<input class="input-buscar" id="contraseña"type="password">	
-					<button class="" id="btn-login" type="submit">Iniciar Sesión</button>	
+				
+				<form action="validar.php" method="post">
+					<label for="">Usuario</label>
+					<input class="input-buscar" name="usuario" type="text">	
+					
+					<label for="">Contraseña</label>
+					<input class="input-buscar" name="contraseña" type="password">	
+					
+					<button class="btn-modal" id="btn-login" type="submit">Iniciar Sesión</button>
+				</form>	
+				
 				</div>
 				<div class="footer">
 					<h3>&copy;InfoCigua - 2019</h3>
@@ -37,12 +49,39 @@
 			</div>
 		</div>
 	</div>
+       
+       <div id="ModalMod" class="modal">
+		<div class="flex" id="flexm">
+			<div class="contenido-modal">
+				<div class="modal-header flex">
+					<h2>Modificar Principal</h2>
+					<span class="close" id="closem">&times;</span>
+				</div>
+				
+				<div class="modal-body">
+				<label for="">Logo: </label>	
+				<input class="input-buscar" type="text" id="logo">
+				<label for="">Titulo: </label>	
+				<input class="input-buscar" type="text" id="titulo">
+				<label for="">Lema: </label>	
+				<input class="input-buscar" type="text" id="lema">
+				<label for="">Imagen: </label>	
+				<input class="input-buscar" type="text" id="imagen">			
+				</div>
+				
+				
+				<div class="footer">
+					<h3>&copy;InfoCigua - 2019</h3>
+				</div>
+			</div>
+		</div>
+	</div>   
+   
     <div id="tablas" class="flotantet">
             <form class="form-estilo">
                   <input class="input-buscar" type="search" placeholder="BUSCAR" aria-label="Search">
                   <button class="btn-buscar" type="submit">BUSCAR</button>
             </form>
-            
              <table border="1" id="Articulos">
               <?php
 		    include 'conexion.php';
@@ -74,7 +113,14 @@
    
     <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">InfoCigua</h1>
+            <h1 class="logo">InfoCigua
+            <?php
+                if($_SESSION['usuario'] <> null || $_SESSION['usuario']<>'')
+                {
+                 echo "<span id='mod-nom' class='nom icon-wrench'></span>"; 
+                }
+                ?>
+            </h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
@@ -89,7 +135,20 @@
                     </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="contacto.php">Contacto</a></li>
-                    <li class="menu_item"><span id="abrir" class="menu_link icon-wrench"></span></li>
+                    <li class="menu_item">
+                    
+                     <?php
+                        
+                    if($_SESSION['usuario'] <> null || $_SESSION['usuario']<>'')
+                    {
+                     echo "<a href='cerrarsesion.php' id='cerrars' class='menu_link'>cerrar sesión</a>"; 
+                    }
+                    else
+                    {
+                       echo '<span id="abrir" class="menu_link icon-wrench"></span>';
+                    }
+                    ?>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -102,7 +161,6 @@
             <p class="banner_txt">Informarte es nuestra prioridad</p>
         </div>
     </div>
-    
     <main class="main">
         <div class="contenedor">
             <section class="slider">
@@ -184,7 +242,7 @@
         <p class="copy">&copy; Ciguatera-2019</p>
     </footer>
     
-    
+    <script src="js/modificar.js"></script>
     <script src="js/btn-flotante.js"></script>
     <script src="js/menu.js"></script>
     <script src="js/login.js"></script>

@@ -2,7 +2,6 @@ let modal = document.getElementById('miModal');
 let flex = document.getElementById('flex');
 let abrir = document.getElementById('abrir');
 let cerrar = document.getElementById('close');
-var nav = document.getElementById('nav');
 
 abrir.addEventListener('click', function(){
     modal.style.display = 'block';
@@ -17,8 +16,4 @@ window.addEventListener('click', function(e){
     if(e.target == flex){
         modal.style.display = 'none';
     }
-});
-abrir.addEventListener('click',function(){                        
-    nav.classList.toggle('mostrar');
-    
 });

@@ -1,0 +1,47 @@
+    #mod-nom
+    {       
+    padding: 15px;
+    background: none;
+    color: white;
+    text-decoration: none; 
+    width: 35%;
+    height: 30%;
+    }
+
+    #mod-nom:hover
+    {
+      background: #14D1CB;  
+    }
+    .nom
+    {
+    display: flex;
+    width: 28px;
+    height: 28px;
+    font-size: 30px;
+    color: #fff;
+    right: 10;
+    line-height: 39px;
+    border-radius: 4px;
+  
+    }
+
+
+@media(max-width:628px)
+{
+      #mod-nom
+    {       
+    padding: 15px;
+    color: white;
+    width: 15%;
+    height: 15%;
+    }
+    
+    .nom
+    {
+    display: flex;
+    width: 18px;
+    height: 18px;
+    font-size: 20px;
+    
+    }
+}
