@@ -1,7 +1,3 @@
-<?php
-session_start();
-?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -16,6 +12,7 @@ session_start();
     <link rel="stylesheet" href="css/tablas.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/btnmod.css">
+    <link rel="stylesheet" href="icon/icono-especial/styles.css">
 
 </head>
 <body>
@@ -31,17 +28,11 @@ session_start();
 					<span class="close" id="close">&times;</span>
 				</div>
 				<div class="modal-body">
-				
-				<form action="validar.php" method="post">
 					<label for="">Usuario</label>
-					<input class="input-buscar" name="usuario" type="text">	
-					
+					<input class="input-buscar" id="usuario" type="text">		
 					<label for="">Contraseña</label>
-					<input class="input-buscar" name="contraseña" type="password">	
-					
-					<button class="btn-modal" id="btn-login" type="submit">Iniciar Sesión</button>
-				</form>	
-				
+					<input class="input-buscar" id="contraseña"type="password">	
+					<button class="btn-modal" id="btn-login" type="submit">Iniciar Sesión</button>	
 				</div>
 				<div class="footer">
 					<h3>&copy;InfoCigua - 2019</h3>
@@ -83,29 +74,7 @@ session_start();
                   <button class="btn-buscar" type="submit">BUSCAR</button>
             </form>
              <table border="1" id="Articulos">
-              <?php
-		    include 'conexion.php';
-		    $query="SELECT * FROM articulos";
-		    $resultado = $mysqli->query($query);
-		    if ($resultado->num_rows > 0) {
-		    while($row = $resultado->fetch_assoc()) {
-				$id_articulos=$row["id_articulos"];
-				$img_autor=$row["img_autor"];
-				$titulo=$row["titulo"];
-				$descripcion_art=$row["descripcion_art"];
-                $img_articulo=$row["img_articulo"];
-				echo "<tr><td>$id_articulos</td>";
-				echo "<td>$img_autor</td>";
-				echo "<td>$titulo</td>";
-				echo "<td>$descripcion_art</td>";
-                echo "<td>$img_articulo</td></tr>";
-				//echo "<td class='text-center'><button type='button' class='btn btn-default glyphicon glyphicon-pencil btn-warning' id='m$id'></button>";
-				//echo "<input value='$id_articulos' type='hidden' id='tm$id_articulos'>";	
-				//echo "<input value='$id_articulos' type='hidden' id='te$id_articulos'>";		
-				//echo "<button type='button' class='btn btn-default glyphicon glyphicon-minus btn-danger' id='e$id_articulos'></button></td></tr>";
-		    }
-		    } else {}
-		    ?>
+              
             </table>
             
         </div>
@@ -113,14 +82,7 @@ session_start();
    
     <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">InfoCigua
-            <?php
-                if($_SESSION['usuario'] <> null || $_SESSION['usuario']<>'')
-                {
-                 echo "<span id='mod-nom' class='nom icon-wrench'></span>"; 
-                }
-                ?>
-            </h1>
+            <h1 class="logo">InfoCigua</h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
@@ -135,20 +97,7 @@ session_start();
                     </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="contacto.php">Contacto</a></li>
-                    <li class="menu_item">
-                    
-                     <?php
-                        
-                    if($_SESSION['usuario'] <> null || $_SESSION['usuario']<>'')
-                    {
-                     echo "<a href='cerrarsesion.php' id='cerrars' class='menu_link'>cerrar sesión</a>"; 
-                    }
-                    else
-                    {
-                       echo '<span id="abrir" class="menu_link icon-wrench"></span>';
-                    }
-                    ?>
-                    </li>
+                    <li class="menu_item"><a href="iniciarsesion.php" id="" class="menu_link icon-wrench"></a></li>
                 </ul>
             </nav>
         </div>
@@ -165,15 +114,15 @@ session_start();
         <div class="contenedor">
             <section class="slider">
                                     <div class="content-img" id="img1">
-                                        <a href="#img5" class="icon-left-open"></a>
+                                        <a href="#img5" class="icon-izquierda"></a>
                                         <img src="imgs/fondomar3.jpg">
-                                        <a href="#img2" class="icon-right-open"></a>
+                                        <a href="#img2" class="icon-derecha"></a>
                                     </div>
                                     
                                     <div class="content-img" id="img2">
-                                        <a href="#img1" class="icon-left-open"></a>
+                                        <a href="#img1" class="icon-izquierda"></a>
                                         <img src="imgs/fondomar.jpg">
-                                        <a href="#img3" class="icon-right-open"></a>
+                                        <a href="#img3" class="icon-derecha"></a>
                                         <div class="content-details">
                                             <h3 class="info_titulo">Titulo de la investigaci&oacute;n</h3>
                                             <p class="info_txt">Resumen de la investigaci&oacute;n</p>
@@ -182,19 +131,19 @@ session_start();
                                     </div>
                                     
                                     <div class="content-img" id="img3">
-                                        <a href="#img2" class="icon-left-open"></a>
+                                        <a href="#img2" class="icon-izquierda"></a>
                                         <img src="imgs/pez1.jpg">
-                                        <a href="#img4" class="icon-right-open"></a>
+                                        <a href="#img4" class="icon-derecha"></a>
                                     </div>
                                     <div class="content-img" id="img4">
-                                        <a href="#img3" class="icon-left-open"></a>
+                                        <a href="#img3" class="icon-izquierda"></a>
                                         <img src="imgs/pez2.jpg">
-                                        <a href="#img5" class="icon-right-open"></a>
+                                        <a href="#img5" class="icon-derecha"></a>
                                     </div>
                                     <div class="content-img" id="img5">
-                                        <a href="#img4" class="icon-left-open"></a>
+                                        <a href="#img4" class="icon-izquierda"></a>
                                         <img src="imgs/pez3.jpg">
-                                        <a href="#img1" class="icon-right-open"></a>
+                                        <a href="#img1" class="icon-derecha"></a>
                                     </div>
             </section>
             

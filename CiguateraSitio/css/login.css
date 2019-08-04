@@ -4,7 +4,11 @@
 	box-sizing: border-box;
 }
 
-
+.alerta
+{
+    color: blue;
+    font-size: 10px;
+}
 
 .modal .flex{
 	width: 100%;
@@ -15,7 +19,14 @@
 }
 
 
+.separador
+{
+        display: flex;    
 
+
+    padding-top: 10%;
+        padding-bottom: 15%;
+}
 
 .modal{
 	display: none;

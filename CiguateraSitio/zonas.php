@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="css/estiloslide.css">
     <link rel="stylesheet" href="css/tablas.css">
     <link rel="stylesheet" href="css/estilos-otras.css">
-        <link rel="stylesheet" href="css/login.css">
-        <link rel="stylesheet" href="css/modificar.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/modificar.css">
+    <link rel="stylesheet" href="icon/icono-especial/styles.css">
 
 
     <!-- Bootstrap core CSS -->
@@ -74,7 +75,7 @@
      
       <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">InfoCigua   <span id="mod-nom" class="nom icon-wrench"></span></h1>
+            <h1 class="logo">InfoCigua</h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
@@ -92,7 +93,7 @@
                     </li>
                     <li class="menu_item"><a class="menu_link select" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="contacto.php">Contacto</a></li>
-                    <li class="menu_item"><span id="abrir" class="menu_link icon-wrench"></span></li>
+                   <li class="menu_item"><a href="iniciarsesion.php" id="" class="menu_link icon-wrench"></a></li>
                 </ul>
             </nav>
         </div>
@@ -109,15 +110,15 @@
         <div class="contenedor">
             <section class="slider">
                                     <div class="content-img" id="img1">
-                                        <a href="#img4" class="icon-left-open"></a>
+                                        <a href="#img4" class="icon-izquierda"></a>
                                         <img src="imgs/mapa.jpg">
-                                        <a href="#img2" class="icon-right-open"></a>
+                                        <a href="#img2" class="icon-derecha"></a>
                                     </div>
                                     
                                     <div class="content-img" id="img2">
-                                        <a href="#img1" class="icon-left-open"></a>
+                                        <a href="#img1" class="icon-izquierda"></a>
                                         <img src="imgs/caribe.jpg">
-                                        <a href="#img3" class="icon-right-open"></a>
+                                        <a href="#img3" class="icon-derecha"></a>
                                         <div class="content-details">
                                             <h3 class="info_titulo">Caribe </h3>
                                             <p class="info_txt">Paises que lo conforman...</p>
@@ -126,9 +127,9 @@
                                     </div>
                                     
                                     <div class="content-img" id="img3">
-                                        <a href="#img2" class="icon-left-open"></a>
+                                        <a href="#img2" class="icon-izquierda"></a>
                                         <img src="imgs/golfo.jpg">
-                                        <a href="#img4" class="icon-right-open"></a>
+                                        <a href="#img4" class="icon-derecha"></a>
                                         <div class="content-details">
                                             <h3 class="info_titulo">Golfo </h3>
                                             <p class="info_txt">Paises que lo conforman...</p>
@@ -136,9 +137,9 @@
                                         </div>
                                     </div>
                                     <div class="content-img" id="img4">
-                                        <a href="#img3" class="icon-left-open"></a>
+                                        <a href="#img3" class="icon-izquierda"></a>
                                         <img src="imgs/salvador.jpg">
-                                        <a href="#img1" class="icon-right-open"></a>
+                                        <a href="#img1" class="icon-derecha"></a>
                                         <div class="content-details">
                                             <h3 class="info_titulo">América Central </h3>
                                             <p class="info_txt">Paises que lo conforman...</p>
@@ -206,16 +207,7 @@
    
 
     
-        <script src="js/modificar.js"></script>
-    <script src="js/btn-flotante.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-        <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="js/clean-blog.min.js"></script>
-  
+     
  <footer class="footer">
         <div class="social">
             <a href="" class="icon-facebook"></a>
@@ -224,6 +216,16 @@
         </div>
         <p class="copy">&copy; InfoCigua-2019</p>
     </footer>
+    
+            <script src="js/modificar.js"></script>
+    <script src="js/btn-flotante.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/clean-blog.min.js"></script>
     
             <script src="js/login.js"></script>
     <script src="js/btn-flotante.js"></script>

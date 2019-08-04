@@ -226,6 +226,28 @@ h1,h2,h3,h4,h5,h6
     
     
 }
+
+.redes
+{
+    padding-bottom: 50px;
+}
+.contactos
+{
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+      padding-bottom: 19px;
+    background: #14D1CB;
+   border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    line-height: 40px;
+    margin: 0 3%;
+    
+    
+}
+
 .imagencentro
 {
     top: -10px;
@@ -254,6 +276,7 @@ h1,h2,h3,h4,h5,h6
      padding-left: 20%;
     padding-right: 20%;
     text-align: center;
+    color: #14D1CB;
 }
 
 .etiqueta

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/estilos-otras.css">
         <link rel="stylesheet" href="css/login.css">
                 <link rel="stylesheet" href="css/modificar.css">
+    <link rel="stylesheet" href="icon/icono-especial/styles.css">
 
 </head>
 <body>
@@ -23,13 +24,11 @@
 					<span class="close" id="close">&times;</span>
 				</div>
 				<div class="modal-body">
-				
 					<label for="Hola">Usuario</label>
-					<input class="input-buscar" name="usuario" type="text">		
+					<input class="input-buscar" id="usuario" type="text">		
 					<label for="Hola">Contraseña</label>
-					<input class="input-buscar" name="contraseña"type="password">	
+					<input class="input-buscar" id="contraseña"type="password">	
 					<button class="btn-modal" id="btn-login" type="submit">Iniciar Sesión</button>	
-				
 				</div>
 				<div class="footer">
 					<h3>&copy;InfoCigua - 2019</h3>
@@ -65,7 +64,7 @@
 	</div> 
    <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">InfoCigua   <span id="mod-nom" class="nom icon-wrench"></span></h1>
+            <h1 class="logo">InfoCigua</h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
@@ -83,7 +82,7 @@
                     </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="contacto.php">Contacto</a></li>
-                    <li class="menu_item"><span id="abrir" class="menu_link icon-wrench"></span></li>
+                    <li class="menu_item"><a href="iniciarsesion.php" id="" class="menu_link icon-wrench"></a></li>
                 </ul>
             </nav>
         </div>
@@ -96,7 +95,6 @@
    <div class="titulo-otras">
           <h2 class="section_titulo">Variable: Autor o Pez, mostrando su nombre </h2>
    </div>
-   
    <section id="info">
    <div class="imagencentro">
        <img class="imgajust" src="imgs/fondomar.jpg" alt="">

@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/estilos-otras.css">
         <link rel="stylesheet" href="css/login.css">
         <link rel="stylesheet" href="css/modificar.css">
+    <link rel="stylesheet" href="icon/icono-especial/styles.css">
 
     
 </head>
@@ -64,7 +65,7 @@
 	</div> 
    <header class="header">
         <div class="contenedor imp">
-            <h1 class="logo">InfoCigua   <span id="mod-nom" class="nom icon-wrench"></span></h1>
+            <h1 class="logo">InfoCigua</h1>
             <span class="icon-bars" id="btn-menu"></span>
             <nav class="nav" id="nav">
                 <ul class="menu">
@@ -82,7 +83,7 @@
                     </li>
                     <li class="menu_item"><a class="menu_link" href="que.php">¿Qu&eacute; es?</a></li>
                     <li class="menu_item"><a class="menu_link" href="contacto.php">Contacto</a></li>
-                    <li class="menu_item"><span id="abrir" class="menu_link icon-wrench"></span></li>
+                   <li class="menu_item"><a href="iniciarsesion.php" id="" class="menu_link icon-wrench"></a></li>
                 </ul>
             </nav>
         </div>

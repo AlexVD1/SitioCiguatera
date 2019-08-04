@@ -38,30 +38,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-add:before {
-  content: "\61";
+.icon-wrench:before {
+  content: "\6a";
 }
-.icon-del:before {
-  content: "\62";
-}
-.icon-mod:before {
-  content: "\63";
-}
-.icon-facebook:before {
-  content: "\64";
-}
-.icon-mail:before {
-  content: "\65";
-}
-.icon-twitter:before {
-  content: "\66";
-}
-.icon-whatsapp:before {
-  content: "\67";
-}
-.icon-derecha:before {
-  content: "\68";
-}
-.icon-izquierda:before {
-  content: "\69";
+.icon-bars:before {
+  content: "▼";
 }

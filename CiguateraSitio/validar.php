@@ -1,33 +1,28 @@
 <?php
-session_start();
-
-$user=$_POST['usuario'];
-$password=$_POST['contraseña'];
+$usuario="Alex";
+$contrasenia="1234";
 
 $h="localhost";
 $u="root";
 $p="";
-$bd="prueba2";
+$bd="infocigua";
 
-$conexion = new mysqli($h, $u, $p,$bd);
+$conexion = mysqli_connect($h, $u, $p,$bd);
 
-$consulta="SELECT * FROM usuarios WHERE usuario='$user' AND pass='$password'";
+$consulta="SELECT * FROM usuarios WHERE usuario='".$usuario."' AND pass='".$contrasenia."'";
 
 $resultado=mysqli_query($conexion, $consulta); 
 
 $filas=mysqli_num_rows($resultado);
 
-if($filas > 0)
+if($filas->num_rows > 0)
 {
    header("location:index.php");
 }
 else
 {
-    header("location:index.php");    
+    header("location:s.php");    
 }
 
-$_SESSION['usuario']=$user;
-$user=null;
-$password=null;
 
 ?>
